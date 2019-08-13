@@ -15,6 +15,7 @@ $blue:  #00BCD4 !global
         justify-content: center
         box-shadow: 10px 0 10px rgba(0,0,0,0.5)
         position: relative
+        animation: onload 1s 
     &-nav
         padding:  15px
         color: #E0E0E0
@@ -46,6 +47,7 @@ $blue:  #00BCD4 !global
         margin: 10px 
         border: 5px solid $white
         box-shadow: 0 0 10px rgba(0,0,0,0.5)
+        z-index: 2
     &-img
         display: flex
         justify-content: center
@@ -58,7 +60,8 @@ $blue:  #00BCD4 !global
         margin-left: -25px
 .main
     &-one
-        text-align: center 
+        text-align: center  
+        animation: rotate 2s 
         &__container
             box-shadow: 0 0 10px rgba(0,0,0,0.5)
             padding-top: 120px
@@ -182,7 +185,7 @@ $blue:  #00BCD4 !global
                 border-left: none
                 font-size: 1rem
                 margin-top: 15px
-                margin-bottom: 15px
+                margin-bottom: 15px 
             &_button
                 background: $blue
                 color: $white
@@ -193,6 +196,9 @@ $blue:  #00BCD4 !global
                 padding-bottom: 7px
                 margin-top: 20px
                 cursor: pointer
+                outline: none
+                border: none
+                width: 40%
                 
 
 *:focus 
@@ -283,4 +289,56 @@ input[type=range]
       background: #EDEDED
 
 
+.skills
+    &_one
+        animation: skills_one 2s 
+.skills
+     &_two
+        animation: skills_two 2s 
+.main-two__animation
+
+.animation
+    &_left
+        visibility: hidden
+    &_right
+        visibility: hidden
+
+
+// анимация 
+@keyframes onload
+    0%
+        opacity: 0
+    60% 
+        opacity: 0.8
+    100%
+        opacity: 1
+@keyframes skills_one
+    0%
+        transform: translateX(-50px) 
+        opacity: 0
+    100%
+        transform: translateX(0px)
+@keyframes skills_two
+    0%
+        transform: translateX(50px) 
+        opacity: 0
+    100%
+        transform: translateX(0px)
+@keyframes rotate
+    0%
+        opacity: 0
+        z-index: -1
+        visibility: hidden
+    100%
+@keyframes left
+    0%
+        transform: translateX(350px)
+        opacity: 0
+    100%
+        
+@keyframes right
+    0%
+        transform: translateX(-350px)
+        opacity: 0
+    100%
         

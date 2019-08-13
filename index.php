@@ -1,3 +1,7 @@
+<?php
+include("config/config.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,8 +100,8 @@
                 <div class="main-two__one_title">
                     SKILLS
                 </div>
-                <div class="row">
-                    <div class="main-two__skills_one">
+                <div class="row main-two__animation">
+                    <div class="main-two__skills_one skills_one">
                         <div class="main-two__title">
                             Professional
                         </div>
@@ -128,7 +132,7 @@
                     </div>
                     <!-- /.main-two__skills_one -->
 
-                    <div class="main-two__skills_one">
+                    <div class="main-two__skills_one skills_two">
                         <div class="main-two__title">
                             Personal
                         </div>
@@ -168,7 +172,7 @@
                     SERVICES
                 </div>
                 <div class="row">
-                        <div class="main-three__container col-md-4 col-xl-4">
+                        <div class="main-three__container animation_left col-md-4 col-xl-4">
                             <div class="main-three__one  col ">
                                 <div class="main-three__one_icon">
                                     <i class="fab fa-android"></i>
@@ -201,7 +205,7 @@
                         <!-- main-three__one  -->
                    </div>
                    <!-- /.main-three__container -->
-                    <div class="main-three__container col-md-4 col-xl-4">
+                    <div class="main-three__container animation_right col-md-4 col-xl-4">
                             <div class="main-three__one col ">
                                 <div class="main-three__one_icon">
                                     <i class="fas fa-paint-brush"></i>
@@ -255,15 +259,15 @@
                     </div>
                     <!-- col-4  -->
                     <div class="main-foo__two col-xl-8">
-                        <div class="main-foo__two_shadow">
-                                <input type="text" placeholder="Name" class="main-foo__two_input">                        
-                                <input type="text" placeholder="Subject" class="main-foo__two_input">
-                                <input type="text" placeholder="Email" class="main-foo__two_input">
-                                <input type="text" placeholder="Massage" class="main-foo__two_input">
-                                <div class="main-foo__two_button">
-                                    Send
-                                </div>
-                        </div>
+                        <form method="POST" action="config/active-form.php" class="main-foo__two_shadow">
+                                <input type="text" placeholder="Name" name="Name" class="main-foo__two_input">                        
+                                <input type="text" placeholder="Subject" name="Sughect" class="main-foo__two_input">
+                                <input type="text" placeholder="Email" name="Email" class="main-foo__two_input">
+                                <input type="text" placeholder="Massage" name="Massage" class="main-foo__two_input">
+                                <input value="Send" type="submit"  class="main-foo__two_button">
+                                    
+                                
+                        </form>
                     </div>
                 </div>
             </div>
@@ -276,5 +280,4 @@
     </main>
 </body>
  <script src="js/index.js"></script>
- <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
 </html>
