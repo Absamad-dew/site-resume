@@ -10,8 +10,9 @@ include("config/config.php");
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Roboto:300,400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/index.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Roboto:300,400,500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/030c442d47.js"></script>
     <style>
         
@@ -101,7 +102,7 @@ include("config/config.php");
                     SKILLS
                 </div>
                 <div class="row main-two__animation">
-                    <div class="main-two__skills_one skills_one">
+                    <div class="main-two__skills_one skills_one col-12 col-md">
                         <div class="main-two__title">
                             Professional
                         </div>
@@ -132,7 +133,7 @@ include("config/config.php");
                     </div>
                     <!-- /.main-two__skills_one -->
 
-                    <div class="main-two__skills_one skills_two">
+                    <div class="main-two__skills_one skills_two col-12 col-md">
                         <div class="main-two__title">
                             Personal
                         </div>
@@ -274,7 +275,7 @@ include("config/config.php");
         </div>
         <div class="main-five">
             <div class="container">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7bf9de7e9b1b8db6cdea730cc9d3f690b469877784c1c2ee63c791070ef9bd1f&amp;source=constructor" width="1110" height="500" frameborder="0"></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7bf9de7e9b1b8db6cdea730cc9d3f690b469877784c1c2ee63c791070ef9bd1f&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
             </div>
         </div>
     </main>
