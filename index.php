@@ -21,7 +21,7 @@ include("config/config.php");
 <body>
     <header>
         <div class="header">
-            <nav class="header-container-nav row">
+            <nav class="header-container-nav row"> 
                 <nav class="header-nav">
                     <a href="#" class="header-nav">Abouut</a>
                 </nav>
@@ -74,23 +74,21 @@ include("config/config.php");
             <div class="container main-one__container">
                 <div class="main-one__contacts">
                     <div class="row main-one__contacts_row">
-                    <a href="#" class="main-one__icon"><i class="fab fa-github"></i></a>
-                    <a href="#" class="main-one__icon"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="main-one__icon"><i class="fab fa-vk"></i></a>
+                    <a href="https://github.com/Absamad-dew/site-resume" class="main-one__icon"><i class="fab fa-github"></i></a>
+                    <a  href="#" class="main-one__icon"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="https://vk.com/id398640838" class="main-one__icon"><i class="fab fa-vk"></i></a>
                     <a href="#" class="main-one__icon"><i class="fab fa-telegram"></i></a>
                     </div>
                 </div>
                 <div class="main-one__descp">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et 
-                        tortor ac tincidunt. In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel sollicitudin. Vestibulum venenatis pharetra mi, ut vestibulum elit ultricies a. Vestibulum at mollis ex, ac consectetur massa. Donec nunc dui, laoreet a nibh et,
-                         semper tincidunt nunc. Donec ac posuere tellus. Pellentesque tempus suscipit
-                          velit sit amet bibendum.
-                </div>
+                Обо мне: в 2016 году поступил в колледж по профессии "Программирование в компьютерных
+                 технологиях" отучился там два с половиной года очно, но после понял что практически 
+                 полезных знаний я там не получу поэтому перешел на заочное обучение и занялся самообучением (03.2019).                </div>
                 <div class="row main-one__download">
                     <div class="main-one__button">
-                        DOWNLOAD RESUME
+                        <a href="file/resume.docx">DOWNLOAD RESUME</a>
                     </div>
-                    <div class="main-one__button">
+                    <div onclick="contactme()" class="main-one__button">
                         CONTACT ME
                     </div>
                 </div>
@@ -112,7 +110,7 @@ include("config/config.php");
                         <input value="60" type="range" name="" id="">
                         
                         <div class="main-two__subtitle">
-                            PHP Web Application
+                            React SPA
                         </div>
                         <input value="30" type="range" name="" id="">
 
@@ -127,9 +125,9 @@ include("config/config.php");
                         <input value="90" type="range" name="" id="">
 
                         <div class="main-two__subtitle">
-                            Microsoft Office
+                            PHP Web Application
                         </div>
-                        <input value="80" type="range" name="" id="">
+                        <input value="40" type="range" name="" id="">
                     </div>
                     <!-- /.main-two__skills_one -->
 
@@ -179,11 +177,11 @@ include("config/config.php");
                                     <i class="fab fa-android"></i>
                                 </div>
                                 <div class="main-three__one_title">
-                                    Android Application
+                                    SPA
                                 </div>
                                 <div class="main-three__one_descp">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod iaculis lobortis. 
-                                        Vestibulum posuere molestie ipsum vel. Vestibulum venenatis pharetra mi, ut vestibulum elit ultricies.
+                                        Есть небольшой опыт в создании и проектировании SPA пока что только в учебных целях. 
+                                        В данный момент двигаюсь в этом направлении.
                                 </div>
                             </div>
                             <!-- main-three__one  -->
@@ -199,8 +197,7 @@ include("config/config.php");
                                 Web Development
                             </div>
                             <div class="main-three__one_descp">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod iaculis lobortis. 
-                                    Vestibulum posuere molestie ipsum vel. Vestibulum venenatis pharetra mi, ut vestibulum elit ultricies.
+                                    Веб разработка различных сайтов начиная с лендингов ( landing page ) заканчивая созданием социальной сети. ( Пока что только в учебных целях )
                             </div>
                         </div>
                         <!-- main-three__one  -->
@@ -215,8 +212,7 @@ include("config/config.php");
                                     UI/UX Design
                                 </div>
                                 <div class="main-three__one_descp">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod iaculis lobortis. 
-                                        Vestibulum posuere molestie ipsum vel. Vestibulum venenatis pharetra mi, ut vestibulum elit ultricies.
+                                        Есть продвинутые знания графических редакторов( более года работал графическим дизайнером ). Сам разрабатываю дизайн сайтов.
                                 </div>
                             </div>
                             <!-- main-three__one  -->

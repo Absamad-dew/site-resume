@@ -98,10 +98,20 @@ body {
   cursor: pointer;
 }
 
+.main-one__button a {
+  color: #ffffff;
+}
+
+.main-one__button:hover {
+  background: #08e3ff;
+}
+
 .main-one__descp {
   color: #686868;
   margin-top: 50px;
   margin-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .main-one__download {
@@ -159,7 +169,6 @@ body {
 
 .main-three {
   margin-bottom: 50px;
-  font-family: 'Lexend Deca', sans-serif;
   justify-content: center;
   margin-left: -30px;
 }
@@ -169,6 +178,7 @@ body {
   margin: 20px;
   text-align: center;
   padding-bottom: 30px;
+  height: 400px;
 }
 
 .main-three__one_title {
@@ -177,8 +187,9 @@ body {
 }
 
 .main-three__one_descp {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 30px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main-three__one_icon {
@@ -513,4 +524,25 @@ input[type=range]:focus::-ms-fill-lower, input[type=range]:focus::-ms-fill-upper
     margin-top: -40px;
     margin-left: -25px;
   }
+}
+
+.main-one {
+  text-align: center;
+  animation: rotate 2s;
+}
+
+.main-one__container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding-top: 120px;
+  margin-top: -50px;
+}
+
+.main-one__descp {
+  color: #686868;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.2rem;
+  text-align: left;
 }

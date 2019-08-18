@@ -76,10 +76,16 @@ $blue:  #00BCD4 !global
             margin-left: 20px
             margin-bottom: 50px
             cursor: pointer
+            & a
+                color: $white
+            &:hover
+                background: lighten($blue, 10% )
         &__descp
             color: lighten($black, 15%)
             margin-top: 50px
             margin-bottom: 50px
+            padding-left: 5%
+            padding-right: 5%
         &__download
             justify-content: center
         &__contacts
@@ -120,7 +126,6 @@ $blue:  #00BCD4 !global
             margin-top: 20px
     &-three
         margin-bottom: 50px
-        font-family: 'Lexend Deca', sans-serif
         justify-content: center
         margin-left: -30px
         &__one
@@ -128,12 +133,14 @@ $blue:  #00BCD4 !global
             margin: 20px
             text-align: center
             padding-bottom: 30px
+            height: 400px
             &_title
                 font-size: 1.3rem
                 margin-bottom: 30px
             &_descp
-                font-size: 1rem
+                font-size: 1.1rem
                 line-height: 30px
+                font-family: 'Roboto', sans-serif
             &_icon
                 text-align: center
             & i
@@ -396,4 +403,19 @@ input[type=range]
             height: 200px
             margin-top: -40px
             margin-left: -25px
-    
+.main
+    &-one
+        text-align: center  
+        animation: rotate 2s 
+        &__container
+            box-shadow: 0 0 10px rgba(0,0,0,0.5)
+            padding-top: 120px
+            margin-top: -50px
+        &__descp
+            color: lighten($black, 15%)
+            margin-top: 50px
+            margin-bottom: 50px
+            padding-left: 5%
+            padding-right: 5%
+            font-size: 1.2rem
+            text-align: left

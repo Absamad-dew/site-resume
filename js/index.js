@@ -15,3 +15,19 @@ function animation_Y(scrollY){
     }
 
 }
+let setInterval_scroll,
+    scroll_win = 0;
+function contactme(){
+    scroll_win = 0
+    console.log('dfkdjfk')
+    setInterval_scroll = setInterval(() => {
+        scroll_window()
+    }, 5);
+    function scroll_window(){
+        scroll_win+=5;
+        window.scrollTo(pageYOffset, scroll_win)
+        if(scroll_win == 2000){
+            clearInterval(setInterval_scroll)
+        }
+    }
+}
